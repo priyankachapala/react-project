@@ -7,6 +7,6 @@ export default function SignIn() {
         <input type="text" id="name" name="name" /><br/>
         <input type="submit" value="Submit" /><br/>
       </form><br/>
-      <a href='http://localhost:3002/register'> Register new user</a>
+      <a href='http://localhost:3001/register'> Register new user</a>
   </div>;
 }
