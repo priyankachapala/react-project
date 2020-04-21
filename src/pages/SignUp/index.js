@@ -9,6 +9,6 @@ export default function SignUp() {
       <input type="text" id="usertype" name="password" /><br/>
       <input type="submit" value="Enter userType" />
     </form>
-    <a href="http://localhost:3002/">back</a>
+    <a href="http://localhost:3001/">back</a>
   </div>;
 }
