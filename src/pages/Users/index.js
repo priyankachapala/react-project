@@ -21,17 +21,19 @@ export default class userdashboard extends React.Component {
     render()
     {
         return <div>
-            <a href="http://localhost:3001/admindashboard"><button> BACK</button></a>
-            <a href="http://localhost:3001/Tripstakenbyuser"><button> Trips Taken By User</button></a>
-            <a href="http://localhost:3001/Ammountpaidbyuser"><button> Ammount paid by User</button></a>
-            <a href="http://localhost:3001/TotalAmmount"><button> Total Ammount</button></a>
-
+            <div className="inputdiv">
+            <a href="http://localhost:3001/admindashboard"><button className="button button5"> BACK</button></a>
+            <a href="http://localhost:3001/Tripstakenbyuser"><button className="button button5"> Trips Taken By User</button></a>
+            <a href="http://localhost:3001/Ammountpaidbyuser"><button className="button button5"> Ammount paid by User</button></a>
+            <a href="http://localhost:3001/TotalAmmount"><button className="button button5"> Total Ammount</button></a>
+            </div>
 
             <h1> Users</h1>
-            <table>
-                <tr> <td><h3><b><i>User Id</i></b></h3></td>
-                    <td><h3><b><i>Gender</i></b></h3></td>
-                    <td><h3><b><i>UserType</i></b></h3></td>
+            <table className="table">
+                <tr className="tr">
+                    <td className="th"><b><i>User Id</i></b></td>
+                    <td className="th"><b><i>Gender</i></b></td>
+                    <td className="th"><b><i>UserType</i></b></td>
 
                 </tr>
 
@@ -39,10 +41,10 @@ export default class userdashboard extends React.Component {
                 {
                     this.state.users
                         .map(user =>
-                            <tr>
-                                <td key={user._id}>{ user._id}</td>
-                                <td key={user._id}>{user.gender}</td>
-                                <td key={user._id}>{user.userType}</td>
+                            <tr className="tr hover-square">
+                                <td className="td" key={user._id}>{ user._id}</td>
+                                <td className="td" key={user._id}>{user.gender}</td>
+                                <td className="td" key={user._id}>{user.userType}</td>
 
                             </tr>
                         )

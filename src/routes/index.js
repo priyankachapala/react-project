@@ -16,6 +16,9 @@ import totalammountdashboard from "../pages/Users/totalammount";
 import cusDashboard from "../pages/Customer";
 import bookrideforsub from "../pages/Subscriber/bookride";
 import newuserdashboard from "../pages/NewUser/NewUser";
+import updatesubscriberdashboard from "../pages/Users/updatesubscriber";
+import updateaccountdashboard from "../pages/Subscriber/updateaccount";
+import finishride from "../pages/Subscriber/finishride";
 
 export default function Routes() {
   return (
@@ -34,7 +37,9 @@ export default function Routes() {
         <Route path="/TotalAmmount" component={totalammountdashboard}/>
         <Route path="/book/ride" component={bookrideforsub}/>
         <Route path="/registernewuser" component={newuserdashboard}/>
-
+        <Route path="/updatesubscriber" component={updatesubscriberdashboard}/>
+        <Route path="/subupdatesubscriber" component={updateaccountdashboard}/>
+        <Route path="/finish/ride" component={finishride}/>
 
       {/* redirect user to SignIn page if route does not exist and user is not authenticated */}
       <Route component={SignIn} />
