@@ -19,6 +19,9 @@ import newuserdashboard from "../pages/NewUser/NewUser";
 import updatesubscriberdashboard from "../pages/Users/updatesubscriber";
 import updateaccountdashboard from "../pages/Subscriber/updateaccount";
 import finishride from "../pages/Subscriber/finishride";
+import stationdashboardforsub from "../pages/Subscriber/viewstations";
+import subscribertripdashboard from "../pages/Subscriber/tripsinfo";
+import stationdashboardforcus from "../pages/Customer/viewstationscustomer";
 
 export default function Routes() {
   return (
@@ -40,6 +43,9 @@ export default function Routes() {
         <Route path="/updatesubscriber" component={updatesubscriberdashboard}/>
         <Route path="/subupdatesubscriber" component={updateaccountdashboard}/>
         <Route path="/finish/ride" component={finishride}/>
+        <Route path="/viewstations/subscriber" component={stationdashboardforsub}/>
+        <Route path="/Tripstakenbysubscriberr" component={subscribertripdashboard}/>
+        <Route path="/viewstations/customer" component={stationdashboardforcus}/>
 
       {/* redirect user to SignIn page if route does not exist and user is not authenticated */}
       <Route component={SignIn} />

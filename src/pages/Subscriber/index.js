@@ -9,7 +9,10 @@ export default function subDashboard() {
 
     <a href="http://localhost:3001/book/ride"><button className="button button5"> Book Ride</button></a>
     <a href="http://localhost:3001/finish/ride"><button className="button button5"> Finish Ride</button></a>
+    <br/>
+    <a href="http://localhost:3001/Tripstakenbysubscriberr"><button className="button button5"> Trips Taken By User</button></a>
 
+    <a href="http://localhost:3001/viewstations/subscriber"><button className="button button5"> View Stations</button></a>
     <a href="http://localhost:3001/subupdatesubscriber"><button className="button button5"> Update Account</button></a>
   </div>
 }
