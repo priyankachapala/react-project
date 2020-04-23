@@ -32,6 +32,6 @@ export default function newuserdashboard() {
         </form><br/>
         <p className="monospace" >Please note down your UserId after clicking the Submit Button</p>
         <p className="monospace">Thank you for Registering. Hope You have a safe ride.</p>
-        <a href="http://localhost:3001/cusdashboard"><button className="button button5"> BACK</button></a>
+        <a href="http://localhost:3001/"><button className="button button5"> BACK</button></a>
     </div>;
 }
